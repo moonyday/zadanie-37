@@ -1,0 +1,41 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1070px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.button {
+		text-transform: uppercase;
+		background: #fff;
+		border-radius: 30px;
+		padding: 8px 15px;
+		font-weight: 700;
+		margin-top: 20px;
+		a {
+			color: #000;
+		}
+
+	}
+
+h2, h3, h4 {
+	font-weight: 800;
+	color: #494949;
+}
+
+
+@media (max-width: 649px) {
+	h2 {
+		font-size: 2.5rem;
+	}
+}

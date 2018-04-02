@@ -1,0 +1,173 @@
+header {
+	position: fixed;
+	z-index: 230;
+	top: 0;
+	left: 0;
+	right: 0;
+
+header > div {
+	position: relative;
+
+}
+
+
+	.header-main-container {
+	max-width: 1270px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+
+	}
+	.header-main {
+		display: flex;
+		justify-content: space-between;
+		}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 1rem;
+
+	}
+	a {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	li {
+		margin-left: 1rem;
+	}
+	.logo {
+		font-weight: 700;
+		color: #fff;
+		font-size: 2.5rem;
+		letter-spacing: -3px;
+	}
+	a:hover, a:visited, .search:hover {
+		color: #fff;
+		opacity: 0.5;
+	}
+	.search {
+		color: #fff;
+		cursor: pointer;
+	}
+	
+}
+
+.bg-change {
+	background: rgba(0, 0, 0, 0.3);
+	transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+}
+
+.search-bar {
+	display: none;
+	width: 95%;
+	transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+	
+	input {
+		border: none;
+		outline: none;
+		border-radius: 30px;
+	}
+	input:focus{
+		outline: 0;
+		border: 0;
+	}
+	.search-open & {
+		display: inline-block;
+	}
+	.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		color: #fff;
+		cursor: pointer;
+		padding-top: 1rem;
+		padding-right: 0.5rem;
+	}
+}
+
+
+nav {
+	.search-open & {
+		width: 50%;
+		padding-top: 1rem; 
+	}
+	ul {
+		.search-open & {
+		display: none;
+		}
+	}
+	span {
+		display: none;
+		float: left;
+		padding-top: 1rem;
+		color: #fff;
+		cursor: pointer;
+		position: relative;
+		z-index: 50;
+		.search-open & {
+		display: none;
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	nav li:nth-of-type(-n+7) {
+		display: none;
+		.mobile-nav-open & {
+			display: block;
+		}
+	}
+
+	ul {
+		.mobile-nav-open & {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			background: #000;
+			opacity: 0.8;
+			height: 100vh;
+		}
+		li {
+			.mobile-nav-open & {
+				padding: 1rem 0;
+			}
+		}
+	}
+	nav .open-nav {
+		display: inline-block;
+		.mobile-nav-open & {
+			display: none;
+		}
+	}
+
+	nav .close-nav {
+		.mobile-nav-open & {
+			display: inline-block;
+		}
+	}
+
+	nav span:hover {
+		opacity: 0.5;
+	}
+	.search-bar {
+		width: 90%;
+	}
+}
+
+@media (max-width: 479px) {
+	header h1 {
+		.search-open & {
+			display: none;
+		}
+	}
+	nav {
+		.search-open & {
+			width: 100%;
+		}
+	}
+}

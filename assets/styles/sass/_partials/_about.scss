@@ -1,0 +1,59 @@
+.about-section {
+	padding: 100px 0px 60px 0px;
+	position: relative;
+	overflow: hidden;
+	button {
+		background: #bc2e3a;
+		a {
+			color: #fff;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&:hover {
+			opacity: 0.8;
+			background: #bc2e3a;
+		}
+	}
+
+}
+
+.about-triangle {
+	background: #161616;
+	position: absolute;
+	top: -350px;
+	right: 0;
+	width: 700px;
+	height: 700px;
+	transform: rotate(-45deg);
+	z-index: 18;
+
+}
+
+.about-img-wrapper {
+	position: relative;
+	z-index: 25;
+
+}
+
+
+@media (max-width: 1125px) {
+	.about-triangle {
+		width: 500px;
+		height: 500px;
+	}
+}
+
+@media (max-width: 649px) {
+	.about-triangle {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 449px) {
+	.about-triangle {
+		width: 350px;
+		height: 350px;
+	}
+}

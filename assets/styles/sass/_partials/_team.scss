@@ -1,0 +1,90 @@
+.team-section {
+	background: #f5f5f5;
+	padding: 60px 0px;
+
+	h2 {
+		text-align: center;	
+		margin-bottom: 2rem;
+	}
+}
+
+.carousel-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	height: 400px;
+	position: relative;
+}
+
+
+
+.carousel-slide {
+	position: relative;
+}
+.team-name {
+	color: #fff;
+	background: #252525;
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.3rem;
+	transform: skew(40deg);
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	p {
+		transform: skew(-40deg);
+		margin-bottom: 0;
+	}
+}
+
+.slick-slide {
+margin: 0 2.5px;
+img {
+opacity: 0.5;
+height: 250px;
+margin: 10px 0;
+ transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+ transform: scale(1.2)
+	}
+}
+
+.slick-center {
+img {
+opacity: 1;
+height: 400px;
+margin: 0;
+transform: scale(1);
+animation: cssAnimation 2s 1 ease-in-out forwards;
+	}
+}
+
+@keyframes cssAnimation {
+  from {
+    -webkit-transform: scale(1) translate(0px);
+  }
+  to {
+    -webkit-transform: scale(1.2) translate(0px);
+  }
+}
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: scale(1) translate(0px);
+  }
+  to {
+    -webkit-transform: scale(1.2) translate(0px);
+  }
+}
+
+
+@media (max-width: 649px) {
+	.slick-center img {
+		height: 350px;
+	}
+}
+
+@media (max-width: 499px) {
+	.slick-center img {
+		height: 250px;
+	}
+}

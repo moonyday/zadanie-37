@@ -1,0 +1,150 @@
+
+.process-section {
+	padding: 60px 0px 100px 0px;
+	overflow: hidden;
+	
+	
+	button {
+		background: #bc2e3a;
+		color: #fff;
+		position: relative;
+		z-index: 40;
+		&:hover {
+			opacity: 0.8;
+			background: #bc2e3a;
+		}
+		a {
+			color: #fff;
+		}
+		a:hover {
+			opacity: 1;
+		}
+	}
+	img {
+		max-height: 250px;
+		max-width: none;
+	}
+	p {
+		margin-top: 2rem;
+	}
+
+}
+
+.process-triangle {
+	position: absolute;
+	right: 0;
+	top: -120px;
+	z-index: 30;
+	width: 0;
+	height: 0;
+	border-top: 350px solid transparent;
+	border-right: 400px solid #bc2e3a;
+	border-bottom: 350px solid transparent;
+	
+}
+
+.team-triangle {
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-left: 200px solid #161616;
+	border-bottom: 150px solid transparent;
+	z-index: 30;
+	position: absolute;
+	top: 330px;
+}
+
+.process-wrapper { 
+	position: relative;
+}
+
+.process-text-wrapper {
+	width: 30%;
+}
+
+.rombus-1, .rombus-2, .rombus-3 {
+	float: left;
+	max-width: 250px;
+	position: relative;
+	b {
+		position: absolute;
+		top: 5%;
+		right: -15%;
+		color: #fff;
+		font-size: 2rem;
+	}
+	h3 {
+		position: absolute;
+		bottom: 10%;
+		left: 20%;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+
+}
+.process-pics-wrapper {
+	position: absolute;
+	right: 0;
+	top: 30%;
+	z-index: 40;
+}
+
+
+@media (max-width: 999px) {
+	.rombus-1, .rombus-2, .rombus-3 {
+		max-width: 220px;
+	}
+	.process-pics-wrapper {
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 849px) {
+	.process-text-wrapper {
+	width: 50%;
+	}
+	.process-triangle {
+		border-top: 250px solid transparent;
+		border-right: 300px solid #bc2e3a;
+		border-bottom: 250px solid transparent;
+		top: -60px;
+	}
+	.rombus-3 {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 699px) {
+	.rombus-2 {
+		display: none;
+	}
+}
+
+@media (max-width: 549px) {
+	.process-triangle {
+		border-top: 150px solid transparent;
+		border-right: 200px solid #bc2e3a;
+		border-bottom: 150px solid transparent;
+		top: -60px;
+	}
+	.rombus-1 {
+		display: none;
+	}
+	.process-section h2 {
+		position: relative;
+		z-index: 40;
+	}
+	.process-text-wrapper {
+		width: 100%;
+		position: relative;
+		z-index: 40;
+	}
+	.team-triangle {
+	border-top: 75px solid transparent;
+	border-left: 120px solid #161616;
+	border-bottom: 75px solid transparent;
+	top: 360px;
+	}
+}
