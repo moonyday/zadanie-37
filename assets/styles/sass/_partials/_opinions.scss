@@ -29,6 +29,12 @@
 		left: -2rem;
 	}
 }
+.opinion-pics img:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+
 
 .opinion-triangle-right {
 	position: absolute;
@@ -107,8 +113,6 @@
 		top: -4.5rem;
 		text-align: center;
 	}
-	
-
 }
 
 @media (max-width: 449px) {
@@ -116,3 +120,5 @@
 		left: 2.6rem;
 	}
 }
+
+

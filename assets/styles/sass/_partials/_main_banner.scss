@@ -1,11 +1,11 @@
 .main-banner {
 	position: relative;
 	img {
-		max-width: 100%;
-		height: auto;
-		display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: 100%;
 	}
-	
 }
 
 .top-section {
@@ -95,6 +95,18 @@
 		text-align: center;
 		h1 {
 			font-size: 3rem;
+		}
+	}
+}
+
+
+@media (min-width: 1441px) {
+	.top-section { 
+		.grid-x {
+		text-align: center;
+		}
+		h1 {
+			font-size: 10rem;
 		}
 	}
 }

@@ -4,6 +4,7 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
+	transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
 
 header > div {
 	position: relative;
@@ -55,7 +56,6 @@ header > div {
 
 .bg-change {
 	background: rgba(0, 0, 0, 0.3);
-	transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
 }
 
 .search-bar {
